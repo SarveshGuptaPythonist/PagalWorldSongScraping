@@ -1,4 +1,6 @@
 
+
+
 # import library
 from bs4 import BeautifulSoup
 import requests
@@ -59,14 +61,13 @@ def doEverything(song, downloadLocation):
 
 
 if __name__ == "__main__":
-    downloadLocation = "specify_download_location"
+    
+    downloadLocation = os.getcwd() + '/'
     songsList = [
-        # "tu tu hai wahi jonita gandhi",
-        # "aise na mujhe tum dekho ash king",
-        # "baahon ke darmiyan anwesha",
-        # "kya leke aaya jagat mai",
-        # "Tere liye sooryavanshi",
-        "Matkar Maya Ko Ahankar"
+        "tu tu hai wahi jonita gandhi",
+        "aise na mujhe tum dekho ash king",
+        "baahon ke darmiyan anwesha",
+        "kya leke aaya jagat mai",
         ]
     for songName in songsList:
         doEverything(songName, downloadLocation)
